@@ -333,7 +333,7 @@ pthread_pthread_LDADD = @LIBPTHREAD@
 
 # specify how to process .l files in order to test the flex built by make all
 
-FLEX = $(top_builddir)/src/flex
+FLEX = $(top_builddir)/src/flex$(EXEEXT)
 
 .l.c: $(FLEX)
 	$(AM_V_LEX)$(FLEX) -o $@ $<
